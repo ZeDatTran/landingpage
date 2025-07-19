@@ -1,11 +1,11 @@
 import React from 'react';
+import '../App.css';
 
 function Header() {
   return (
     <header className="header">
-      <div className="logo">QRanty.vn</div>
-      
-       <nav>
+      <div className="logo"></div>
+      <nav>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#issues">Issues</a></li>
@@ -13,7 +13,7 @@ function Header() {
           <li><a href="#benefits">Benefits</a></li>
           <li><a href="#results">Results</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          {/* <li><input type="text" placeholder="Search..." /></li> */}
+          <li><input type="text" placeholder="Search..." /></li>
         </ul>
       </nav>
     </header>

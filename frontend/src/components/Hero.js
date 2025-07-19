@@ -46,10 +46,14 @@ function Hero() {
         <button className="hero-contact-cta" onClick={() => setIsModalOpen(true)}>Liên hệ ngay</button>
       </div>
       <div className="video-container">
-        <video controls className="hero-video">
-          <source src="https://example.com/video.mp4" type="video/mp4"/>
-          Trình duyệt của bạn không hỗ trợ video.
-        </video>
+        <iframe
+          className="hero-video"
+          src="https://www.youtube.com/embed/GptSPZbGOyA"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
       <button className="form-cta" onClick={() => setIsModalOpen(true)}>Nhận thông tin</button>
       {isModalOpen && (
