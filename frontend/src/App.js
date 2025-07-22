@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Features from './components/Features';
 import Issues from './components/Issues';
+import Solutions from './components/Solutions.js';
 import Benefits from './components/Benefits';
 import Results from './components/Results';
 import Testimonials from './components/Testimonials';
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <About />
       <Issues />
+      <Solutions/>
       <Features />
       <Benefits />
       <Results />

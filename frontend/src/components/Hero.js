@@ -40,7 +40,7 @@ function Hero() {
             <ul style={{ listStyle: 'none' }}>
                 <li>✓ Giải pháp bảo hành thông minh</li>
                 <li>✓ Quản lý bảo hành sản phẩm</li>
-                <li>✓ Tăng hiệu quả bảo hành</li>
+                <li>✓ Kích hoạt bảo hành tức thì</li>
             </ul>
         </div>
         <button className="hero-contact-cta" onClick={() => setIsModalOpen(true)}>Liên hệ ngay</button>

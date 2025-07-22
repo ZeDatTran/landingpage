@@ -13,7 +13,6 @@ function Header() {
           <li><a href="#benefits">Benefits</a></li>
           <li><a href="#results">Results</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <li><input type="text" placeholder="Search..." /></li>
         </ul>
       </nav>
     </header>

@@ -12,7 +12,7 @@ function Issues() {
             <div className="issue-item">
               <h3>Vấn đề của người tiêu dùng</h3>
               <ul>
-                <li>Phải giữ team bảo hành</li>
+                <li>Phải giữ team bảo hành</li> 
                 <li>Không biết về thời gian kích hoạt và duy trì bảo hành</li>
                 <li>Không biết hàng có chính hãng không</li>
               </ul>
@@ -20,7 +20,7 @@ function Issues() {
             <div className="issue-item">
               <h3>Vấn đề của doanh nghiệp</h3>
               <ul>
-                <li>Tốn chi phí bảo hành thủ công</li>
+                <li>Tốn chi phí nhân lực bảo hành thủ công</li>
                 <li>Hàng giả hàng nhái khó kiểm soát gây thất thoát</li>
                 <li>Mất lòng tin của khách hàng</li>
               </ul>

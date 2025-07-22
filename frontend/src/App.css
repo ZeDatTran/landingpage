@@ -517,6 +517,106 @@ nav a {
   animation: fadeIn 1s ease-in;
 }
 
+.solutions {
+  padding: 60px 40px;
+  background: #f8f9fa;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.solutions-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.solutions-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.solutions-illustration {
+  width: 100%;
+  height: 400px;
+  background-image: url('./pic/qrpl.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.solutions-content {
+  flex: 1;
+  text-align: left;
+}
+
+.solutions-title {
+  font-size: 2.5em;
+  color: #330aa3;
+  margin-bottom: 30px;
+}
+
+.solutions-list {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+.solution-item {
+  flex: 1;
+}
+
+.solution-item h3 {
+  font-size: 1.8em;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.tick-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tick-list li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #333;
+  position: relative;
+  padding-left: 25px;
+}
+
+.tick-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: green;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .solutions-container {
+    flex-direction: column;
+  }
+  .solutions-image {
+    width: 100%;
+  }
+  .solutions-illustration {
+    height: 250px;
+  }
+  .solutions-content {
+    width: 100%;
+  }
+  .solutions-title {
+    font-size: 2em;
+  }
+  .solution-item h3 {
+    font-size: 1.5em;
+  }
+  .solution-item li {
+    font-size: 1em;
+  }
+}
 .benefits-title {
   font-size: 2.5em;
   color: #330aa3;

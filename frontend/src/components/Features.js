@@ -7,7 +7,7 @@ function Features() {
 
   return (
     <section className="features" id="features">
-      <h2 className="about-title"> Các Giải Pháp Của Chúng Tôi</h2>
+      <h2 className="about-title"> QRanty giúp bạn những gì</h2>
       {/* <div className="stat">
         <span className="stat-number">500</span>
         <span>Doanh Nghiệp & Đối tác </span>
