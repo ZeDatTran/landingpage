@@ -21,6 +21,10 @@ function Features() {
           <h3>Tiết Kiệm Thời Gian</h3>
           <p>Tự động điền dữ liệu sản phẩm bảo hành từ kết nối với hệ thống doanh nghiệp, không tốn thời gian nhập liệu.</p>
         </div>
+         <div className="card">
+          <h3>Cá nhân hóa giải pháp</h3>
+          <p>Tính năng, giao diện, cơ sở dữ liệu,... tùy chỉnh theo yêu cầu, tăng độ nhận diện thương hiệu và uy tín doanh nghiệp.</p>
+        </div>
         <div className="card">
           <h3>Tự Động Hóa Thông Báo</h3>
           <p>Tích hợp thông báo tự động qua email/sms cho doanh nghiệp và cả khách hàng.</p>

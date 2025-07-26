@@ -35,6 +35,20 @@ function Solutions() {
               </div>
             </div>
 
+
+            <div className="solution-item normal solution-item-3">
+              <div className="solution-image-wrapper solution-image-3"></div>
+              <div className="solution-text">
+                <h3>Tùy biến theo yêu cầu - white label</h3>
+                <ul className="tick-list">
+                  <li>Hỗ trợ xây dựng thương hiệu riêng: Tùy chỉnh tên và giao diện theo sản phẩm, tăng độ nhận diện thương hiệu</li>
+                  <li>Tùy chỉnh chức năng theo nhu cầu sử dụng: Thêm bớt các tính năng dựa trên nhu cầu sử dụng thực tế</li>
+                  <li>Phân tích hành vi và insight khách hàng: Theo dõi và phân tích dữ liệu khách hàng, giúp tối ưu chiến lược tiếp cận và giữ chân người dùng</li>
+                  <li>Tích hợp linh hoạt cơ sở dữ liệu: Xây dựng cơ sở dữ liệu riêng hay kết nối với cơ sở dữ liệu có sẵn</li>
+                </ul>
+              </div>
+            </div>
+
             {/* <div className="solution-item normal solution-item-3">
               <div className="solution-image-wrapper solution-image-3"></div>
               <div className="solution-text">
