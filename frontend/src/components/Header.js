@@ -7,12 +7,12 @@ function Header() {
       <div className="logo"></div>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#issues">Issues</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#benefits">Benefits</a></li>
-          <li><a href="#results">Results</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#issues">Vấn đề</a></li>
+          <li><a href="#solutions">Giải pháp</a></li>
+          <li><a href="#features">Lợi ích</a></li>
+          <li><a href="#results">Thành tựu</a></li>
+          <li><a href="#testimonials">Phản hồi khách hàng</a></li>
         </ul>
       </nav>
     </header>

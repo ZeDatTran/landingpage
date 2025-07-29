@@ -7,10 +7,10 @@ function Issues() {
       <div className="issues-container">
         <div className="issues-image issues-illustration"></div>
         <div className="issues-content">
-          <h2 className="issues-title">Vấn đề của bảo hành sản phẩm</h2>
+          <h2 className="issues-title">Cơn Ác Mộng Bảo Hành</h2>
           <div className="issues-list">
             <div className="issue-item">
-              <h3>Vấn đề của người tiêu dùng</h3>
+              <h3>Khách Hàng Gặp Khó</h3>
               <ul>
                 <li>Phải giữ giấy tờ bảo hành</li> 
                 <li>Không biết về thời gian kích hoạt và duy trì bảo hành</li>
@@ -19,7 +19,7 @@ function Issues() {
               </ul>
             </div>
             <div className="issue-item">
-              <h3>Vấn đề của doanh nghiệp</h3>
+              <h3>Doanh Nghiệp Đau Đầu</h3>
               <ul>
                 <li>Tốn chi phí, nhân lực để vận hành bảo hành thủ công</li>
                 <li>Hàng giả hàng nhái khó kiểm soát gây thất thoát</li>
