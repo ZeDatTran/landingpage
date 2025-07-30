@@ -7,10 +7,10 @@ function About() {
 
       <div className="about-content">
         <div className="team-image-placeholder">
-          <img src="../pic/bg.jpg" alt="QRanty Team" className="team-image" />
         </div>
         <div className="about-text">
-                <h2 className="about-title">Giới thiệu Về QRanty </h2>
+                
+                {/* <h2 className="about-title">Giới thiệu Về QRanty </h2> */}
           <h3 className="about-highlight">Qranty giải pháp bảo hành "một chạm"</h3>
           <p>
             QRanty - Giải pháp bảo hành thông minh, cho phép <strong>kích hoạt bảo hành tức thì</strong> chỉ với một lần quét mã QR. 

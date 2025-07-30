@@ -36,7 +36,8 @@ function Hero() {
           <h1 className="hero-title">
             Bảo hành <span className="hight-light1">"một chạm"</span>
             <br />
-            với QRanty
+            với QRanty.
+            
           </h1>
           <div className="hero-subtitle">
             <ul style={{ listStyle: "none", paddingLeft: 0 }}>

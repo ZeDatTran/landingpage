@@ -4,6 +4,7 @@ import '../App.css';
 function Solutions() {
   return (
     <section className="solutions" id="solutions">
+      
       <div className="solutions-container">
         <div className="solutions-content">
           <h2 className="solutions-title">Giải pháp của QRanty</h2>
@@ -12,12 +13,12 @@ function Solutions() {
             <div className="solution-item normal solution-item-1">
               <div className="solution-image-wrapper solution-image-1"></div>
               <div className="solution-text">
-                <h3>Tự động cập nhật thông tin khách hàng lên CRM</h3>
+                  <h3>Giải pháp Kích hoạt và Quản lý Bảo hành</h3>
+                <p className="solution-description">Hỗ trợ người tiêu dùng kích hoạt và theo dõi bảo hành dễ dàng với công nghệ QR hiện đại.</p>
                 <ul className="tick-list">
-                  <li>Kích hoạt bảo hành tức thì qua QR Code bằng gửi thông báo SMS Brandname kích hoạt tới SĐT người tiêu dùng.</li>
-                  <li>Theo dõi trạng thái bảo hành trực tuyến</li>
-                  <li>Xác thực sản phẩm chính hãng ngay lập tức</li>
-                  <li>Đồng bộ dữ liệu khách hàng với hệ thống CRM để dễ quản lý</li>
+                  <li>Kích hoạt bảo hành tức thì bằng quét QR chuyển hướng đến mobile site bảo hành của doanh nghiệp.</li>
+                  <li>Gửi SMS thông tin bảo hành và hướng dẫn qua User Guide chi tiết.</li>
+                  <li>Tra cứu nhanh Knowledge Page để  xem thông tin sản phẩm và xác nhận chính hãng.</li>
                 </ul>
               </div>
             </div>
@@ -25,12 +26,26 @@ function Solutions() {
             <div className="solution-item reverse solution-item-2">
               <div className="solution-image-wrapper solution-image-2"></div>
               <div className="solution-text">
-                <h3>Mobile site trực quan dễ thao tác </h3>
+                <h3>Giải pháp Hỗ trợ Doanh nghiệp</h3>
+                <p className="solution-description">Tối ưu hóa quy trình doanh nghiệp và tích hợp dữ liệu khách hàng để tăng hiệu quả.</p>
                 <ul className="tick-list">
-                  <li>Tự động hóa quy trình bảo hành, giảm chi phí nhân lực với đầy đủ tính năng quản lý </li>
-                  <li>Sử dụng QR Code để kiểm soát hàng giả hiệu quả</li>
-                  <li>Cung cấp các video giới thiệu và hướng dẫn sử dụng của sản phẩm</li>
-                  <li>Cải thiện trải nghiệm người tiêu dùng, tăng độ tin cậy</li>
+                  <li>Tích hợp CRM và Call Center, giảm thời gian xử lý bảo hành.</li>
+                  <li>Thu thập Customer Information và Purchase Information để phân tích sâu.</li>
+                  <li>Cung cấp Insights và chiến lược Marketing dựa trên dữ liệu thực tế.</li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div className="solution-item normal solution-item-3">
+              <div className="solution-image-wrapper solution-image-3"></div>
+              <div className="solution-text">
+                  <h3>Giải pháp Mở rộng và Tăng trưởng</h3>
+                <p className="solution-description">Mở rộng doanh thu và xây dựng lòng trung thành với các dịch vụ bổ sung.</p>
+                <ul className="tick-list">
+                  <li>Đề xuất Paid-Extended Warranty.</li>
+                  <li>Tối ưu hóa Marketing với dữ liệu từ khách hàng hiện tại.</li>
+                  <li>Hỗ trợ Request và Contact để nâng cao dịch vụ khách hàng.</li>
                 </ul>
               </div>
             </div>
