@@ -357,9 +357,11 @@ nav a {
 .team-image-placeholder {
   width: 350px;
   height: 350px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  background-image: url('./pic/pic1.png'); /* Cập nhật đường dẫn ảnh phù hợp với dự án bạn */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   animation: scaleIn 1.2s ease-out;
 }
 
@@ -391,7 +393,6 @@ nav a {
 
 .issues {
   padding: 60px 40px;
-  background-image: url('./pic/19366.jpg');
   background-size: cover;
   text-align: center;
   animation: fadeIn 1s ease-in;
@@ -519,7 +520,7 @@ nav a {
 }
 
 .solution-image-1 {
-  background-image: url('./pic/tich-hop-crm-1.webp');
+  background-image: url('./pic/scan.png');
 }
 
 .solution-image-2 {
@@ -774,122 +775,63 @@ nav a {
 
 /* ==== Section Results ==== */
 
-.results {
-  padding: 80px 40px;
-  background: #f5f9fc;
-  text-align: center;
-  animation: fadeIn 1s ease-in;
-}
-
-.results h2 {
-  font-size: 2.2em;
-  margin-bottom: 20px;
-  color: #0d3b66;
-}
-
-.stat {
-  font-size: 1.1em;
-  margin-bottom: 40px;
-  color: #555;
-  max-width: 900px;
-  margin-inline: auto;
-}
-
-/* === ẢNH === */
-.result-images {
+.results-section {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  margin: 0 auto 50px auto;
-  flex-wrap: wrap;
-}
-
-.result-image {
-  width: 100%;
-  max-width: 700px;
-  height: 300px;
-  background-size: contain; 
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-
-.result-image:hover {
-  transform: scale(1.02);
-}
-
-.image-step1 {
-  background-image: url('./pic/brother1.png');
-}
-
-.image-step2 {
-  background-image: url('./pic/brother2.png');
-}
-
-/* === CARD === */
-.results-content {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.result-item {
-  background: #ffffff;
-  padding: 30px 20px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.08);
-  width: 250px;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  padding: 4rem 2rem;
+  background-color: white;
+  flex-wrap: wrap;
 }
 
-.result-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(0, 123, 255, 0.15);
+.results-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1200px;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
-.result-number {
-  font-size: 2.4em;
+.left-content .phone-img {
+  background-image: url("../public/assets/qranty_phone.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 350px;
+  height: 600px;
+}
+
+.right-content {
+  flex: 1;
+  min-width: 320px;
+}
+
+.headline {
+  font-size: 2rem;
   font-weight: bold;
-  color: #007bff;
-  margin-bottom: 10px;
+  line-height: 1.4;
 }
 
-.result-desc {
-  font-size: 1.05em;
-  color: #333;
-  line-height: 1.5;
+.highlight {
+  background-color: #facc15;
+  padding: 0 0.5rem;
+  border-radius: 0.25rem;
 }
 
-/* === Responsive === */
-@media (max-width: 768px) {
-  .result-images {
-    flex-direction: column;
-    gap: 20px;
-  }
+.description {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #4a4a4a;
+}
 
-  .result-image {
-    max-width: 100%;
-    aspect-ratio: 3 / 4;
-  }
-
-  .results-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .result-item {
-    width: 90%;
-  }
+.sample-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
 }
 
 

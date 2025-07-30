@@ -7,7 +7,7 @@ function Features() {
       <h2 className="about-title">Tính Năng Nổi Bật Của Qranty</h2>
 
       <div className="features-layout">
-        <div className="feature-image-left"></div>
+        {/* <div className="feature-image-left"></div> */}
 
         <div className="card-grid">
           <div className="card">

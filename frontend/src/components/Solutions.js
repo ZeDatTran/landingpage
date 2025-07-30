@@ -16,7 +16,7 @@ function Solutions() {
                   <h3>Giải pháp Kích hoạt và Quản lý Bảo hành</h3>
                 <p className="solution-description">Hỗ trợ người tiêu dùng kích hoạt và theo dõi bảo hành dễ dàng với công nghệ QR hiện đại.</p>
                 <ul className="tick-list">
-                  <li>Kích hoạt bảo hành tức thì bằng quét QR.</li>
+                  <li>Kích hoạt bảo hành tức thì bằng quét QR chuyển hướng đến mobile site bảo hành của doanh nghiệp.</li>
                   <li>Gửi SMS thông tin bảo hành và hướng dẫn qua User Guide chi tiết.</li>
                   <li>Tra cứu nhanh Knowledge Page để  xem thông tin sản phẩm và xác nhận chính hãng.</li>
                 </ul>
