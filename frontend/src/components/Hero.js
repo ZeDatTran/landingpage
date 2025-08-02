@@ -2,7 +2,7 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <section className="hero-section">
+    <section className="hero-section" id ='hero'>
       <div className="decor decor-orange decor-1" style={{ top: '-5%', left: '5%' }}></div>
       <div className="decor decor-pink decor-2" style={{ top: '30%', left: '-5%' }}></div>
       <div className="decor decor-orange decor-3" style={{ bottom: '0%', right: '20%' }}></div>

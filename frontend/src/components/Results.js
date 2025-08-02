@@ -17,7 +17,7 @@ const Result = () => {
   };
 
   return (
-    <div className="results-section">
+    <section className="results-section" id ='results'>
       <div className="results-container">
         {/* Hình bên trái */}
         <div className="left-content">
@@ -49,7 +49,7 @@ const Result = () => {
           </Slider>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

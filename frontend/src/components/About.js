@@ -1,8 +1,9 @@
-import React from 'react';
 import './About.css';
-function About() {
+import React, { forwardRef } from 'react';
+
+const About = () => {
   return (
-    <section className="about" id="about">
+    <section className="about" id="about" >
 
       <div className="about-content">
         <div className="team-image-placeholder">
@@ -20,6 +21,6 @@ function About() {
       </div>
     </section>
   );
-}
+};
 
 export default About;

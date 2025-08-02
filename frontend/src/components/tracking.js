@@ -1,28 +1,75 @@
 import { useEffect } from "react";
+const SHEET_ENDPOINT =
+  "https://script.google.com/macros/s/AKfycbxPnPEM7sHtdpYcYRK5bE9bXOCXJXusHuXO18RSRakRC_Rh4frsvvgHKeDbWVLGq9qATg/exec";
 
-function useScrollTracking() {
+const sendToGoogleSheet = (sectionId) => {
+  fetch(SHEET_ENDPOINT, {
+    method: "POST",
+    mode: "no-cors", // Google Script không cần phản hồi
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      section: sectionId,
+      page: window.location.pathname,
+    }),
+  });
+};
+
+const TRACKED_SECTIONS = [
+  "hero",
+  "about",
+  "features",
+  "issues",
+  "solutions",
+  "results",
+  "testimonials",
+  "form",
+];
+
+const useScrollTracking = () => {
   useEffect(() => {
-    const thresholds = [25, 50, 75, 100];
-    const triggered = new Set();
+    const sentSections = new Set();
 
-    const handleScroll = () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const id = entry.target.id;
 
-      const percent = Math.round((scrollTop + windowHeight) / documentHeight * 100);
+          if (entry.isIntersecting && !sentSections.has(id)) {
+            // Gửi custom event lên HubSpot
+            // if (window._hsq) {
+            //   window._hsq.push([
+            //     "trackCustomBehavioralEvent",
+            //     {
+            //       name: `viewed_${id}`,
+            //       properties: {
+            //         section: id,
+            //         timestamp: new Date().toISOString(),
+            //       },
+            //     },
+            //   ]);
+            //   console.log(`📩 Đã gửi event HubSpot: viewed_${id}`);
 
-      thresholds.forEach((t) => {
-        if (percent >= t && !triggered.has(t)) {
-          triggered.add(t);
-          console.log(`Scrolled ${t}%`);
-        //   sendTrackingEvent(`scroll_${t}_percent`);
-        }
-      });
-    };
+            // }
+            sendToGoogleSheet(id);
+            sentSections.add(id);
+          }
+        });
+      },
+      {
+        threshold: 0.8, // Chỉ trigger khi phần tử hiển thị toàn bộ
+      }
+    );
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    // Bắt đầu theo dõi các section
+    TRACKED_SECTIONS.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
   }, []);
-}
+};
+
 export default useScrollTracking;

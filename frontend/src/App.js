@@ -12,22 +12,23 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import Form from './components/Form';
 import useScrollTracking from './components/tracking.js'
+import { useRef } from 'react';
+
 function App() {
-  useScrollTracking();
+   useScrollTracking(); 
+
   return (
     <div className="App">
       <Header />
       <Hero />
-      <About />
-      <Issues />
-      <Solutions/>
+      <About  />
+      <Issues  />
+      <Solutions  />
       <Features />
-      {/* <Benefits /> */}
-      <Results />
-      <Testimonials />
-      <Form/>
+      <Results  />
+      <Testimonials  />
+      <Form />
       <Footer />
-      
     </div>
   );
 }

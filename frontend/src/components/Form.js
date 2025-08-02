@@ -46,7 +46,7 @@ function Form() {
   }, []);
 
   return (
-    <div className="form-container" id="form">
+    <section className="form-container" id="form">
       <div className="img-communication-container">
         <img
           id="img-contact"
@@ -57,7 +57,7 @@ function Form() {
       <div className="script-container">
         <div id="hubspotFormStatic"></div>
       </div>
-    </div>
+    </section>
   );
 }
 
