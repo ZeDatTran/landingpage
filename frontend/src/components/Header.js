@@ -13,6 +13,7 @@ function Header() {
           <li><a href="#features">Lợi ích</a></li>
           <li><a href="#results">Thành tựu</a></li>
           <li><a href="#testimonials">Phản hồi khách hàng</a></li>
+          <li><a href="#form">Liên hệ</a></li>
         </ul>
       </nav>
     </header>
