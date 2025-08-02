@@ -3,21 +3,19 @@ import "./Hero.css";
 
 function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  
   useEffect(() => {
     if (isModalOpen) {
-      // Kiểm tra đã tồn tại form chưa để tránh chèn lại nhiều lần
       if (document.querySelector("#hubspotForm > iframe")) return;
-
       const script = document.createElement("script");
       script.src = "https://js.hsforms.net/forms/embed/v2.js";
       script.async = true;
       script.onload = () => {
         if (window.hbspt) {
           window.hbspt.forms.create({
-            region: "na2", // ✅ đúng khu vực tài khoản của bạn
-            portalId: "243256377", // ✅ thay bằng portalId thực
-            formId: "64d996ea-bedd-448a-a973-917de06a98b9", // ✅ thay bằng formId thực
+            region: "na2", 
+            portalId: "243256377", 
+            formId: "64d996ea-bedd-448a-a973-917de06a98b9",
             target: "#hubspotForm",
           });
         }

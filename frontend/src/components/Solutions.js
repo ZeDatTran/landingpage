@@ -50,7 +50,7 @@ function Solutions() {
               </div>
             </div>
 
-
+{/* 
             <div className="solution-item normal solution-item-3">
               <div className="solution-image-wrapper solution-image-3"></div>
               <div className="solution-text">
@@ -62,7 +62,7 @@ function Solutions() {
                   <li>Tích hợp linh hoạt cơ sở dữ liệu: Xây dựng cơ sở dữ liệu riêng hay kết nối với cơ sở dữ liệu có sẵn</li>
                 </ul>
               </div>
-            </div>
+            </div> */}
 
             {/* <div className="solution-item normal solution-item-3">
               <div className="solution-image-wrapper solution-image-3"></div>

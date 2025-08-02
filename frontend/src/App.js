@@ -10,8 +10,10 @@ import Benefits from './components/Benefits';
 import Results from './components/Results';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
-
+import Form from './components/Form';
+import useScrollTracking from './components/tracking.js'
 function App() {
+  useScrollTracking();
   return (
     <div className="App">
       <Header />
@@ -23,6 +25,7 @@ function App() {
       {/* <Benefits /> */}
       <Results />
       <Testimonials />
+      <Form/>
       <Footer />
     </div>
   );
