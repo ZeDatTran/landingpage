@@ -1,87 +1,111 @@
-.hero {
-  position: relative; /* để các bóng định vị theo hero */
-  margin-top: 100px;
-  /* overflow: hidden;  */
+.hero-section {
+  position: relative;
+  margin-top: 170px;
+  margin-bottom: 120px;
 }
 
-.blur-ball {
+/* 🎨 Decor balls */
+.decor {
   position: absolute;
   width: 300px;
   height: 300px;
-  border-radius: 50%;
-  filter: blur(100px);
+  border-radius: 20px;
   z-index: 0;
   opacity: 0.6;
 }
 
-.top-left {
-  top: -100px;
-  left: -100px;
-  background: radial-gradient(circle, #007bff, transparent);
+.decor-orange {
+  background: radial-gradient(circle, #c9c5fcd5, transparent);
+  opacity: 0.4 !important;
 }
 
-.bottom-right {
-  bottom: -100px;
-  right: -100px;
-  background: radial-gradient(circle, #a149db, transparent);
-  
+.decor-orange.decor-1 {
+  background: radial-gradient(circle, #e7cef8, transparent) !important;
 }
 
+.decor-orange.decor-3 {
+  background: radial-gradient(circle, #7f71fada, transparent) !important;
+}
 
-.hero-wrapper {
-    position: relative;
+.decor-pink.decor-2 {
+  background: radial-gradient(circle, #f8ecd6, transparent) !important;
+}
+
+.decor-purple.decor-4 {
+  background: radial-gradient(circle, #caa5fc, transparent);
+}
+
+.decor-blue.decor-5 {
+  background: radial-gradient(circle, #f7c5fcd7, transparent);
+}
+
+.decor-darkblue.decor-6 {
+  background: radial-gradient(circle, #2195f3c5, transparent);
+  opacity: 0.8 !important;
+  width: 400px !important;
+}
+
+/* 💡 Main layout */
+.hero-container {
+  position: relative;
   z-index: 1;
-
   display: flex;
+  flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 40px auto;
   gap: 32px;
-  width: 100%;
-  height: 100%; 
+  width: 120%;
+  height: 100%;
 }
 
 .hero-content {
-  flex: 3;
+  flex: 7;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 50px;
   padding: 10px;
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 4.8rem;
 }
 
 .hight-light1 {
   color: #fad501;
   font-weight: bold;
 }
-.subtitle{
-    font-size: 1.3em;
-    margin: 10px;
+
+.hero-subtitle {
+  margin-top: 20px;
 }
-.img-container {
-  flex: 2;
+
+.hero-list-item {
+  font-size: 1.5em;
+  margin: 0.7em 0;
+}
+
+.hero-image {
+  flex: 4;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   max-height: 600px;
   overflow: hidden;
 }
 
-.img-container img {
+.hero-image img {
   max-height: 600px;
   height: auto;
-  width: auto; /* 👈 giữ tỉ lệ ảnh gốc */
-  object-fit: contain; /* 👈 tránh cắt ảnh */
+  width: auto;
+  object-fit: contain;
 }
 
-
-
-.hero-contact-cta {
+/* 🟦 Nút chính */
+.hero-button {
   background: #007bff;
   color: #fff;
   padding: 15px 30px;
@@ -92,9 +116,58 @@
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
   margin-top: 20px;
+  max-width: 200px;
+  text-decoration: none;
+  width: fit-content;
 }
 
-.hero-contact-cta:hover {
+.hero-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ✨ Nút nổi bật dưới góc */
+.floating-cta {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  z-index: 999;
+  padding: 16px 32px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff5722, #ffc107);
+  box-shadow: 0 0 20px rgba(255, 87, 34, 0.4);
+  animation: teeter 2s infinite ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 152, 0, 0.6);
+}
+
+/* Hiệu ứng bập bênh */
+@keyframes teeter {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(3deg);
+  }
+  40% {
+    transform: rotate(-3deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

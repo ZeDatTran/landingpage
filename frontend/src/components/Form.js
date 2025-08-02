@@ -46,7 +46,7 @@ function Form() {
   }, []);
 
   return (
-    <div className="form-container">
+    <div className="form-container" id="form">
       <div className="img-communication-container">
         <img
           id="img-contact"

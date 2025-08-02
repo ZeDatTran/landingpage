@@ -1,79 +1,44 @@
-import React, { useState, useEffect } from "react";
 import "./Hero.css";
 
 function Hero() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  
-  useEffect(() => {
-    if (isModalOpen) {
-      if (document.querySelector("#hubspotForm > iframe")) return;
-      const script = document.createElement("script");
-      script.src = "https://js.hsforms.net/forms/embed/v2.js";
-      script.async = true;
-      script.onload = () => {
-        if (window.hbspt) {
-          window.hbspt.forms.create({
-            region: "na2", 
-            portalId: "243256377", 
-            formId: "64d996ea-bedd-448a-a973-917de06a98b9",
-            target: "#hubspotForm",
-          });
-        }
-      };
-      document.body.appendChild(script);
-    }
-  }, [isModalOpen]);
-
   return (
-    <section className="hero">
-      <div className="blur-ball top-left"></div>
-      <div className="blur-ball bottom-right"></div>
+    <section className="hero-section">
+      <div className="decor decor-orange decor-1" style={{ top: '-5%', left: '5%' }}></div>
+      <div className="decor decor-pink decor-2" style={{ top: '30%', left: '-5%' }}></div>
+      <div className="decor decor-orange decor-3" style={{ bottom: '0%', right: '20%' }}></div>
+      <div className="decor decor-purple decor-4" style={{ bottom: '-15%', right: '15%', width: '600px', height: '200px' }}></div>
+      <div className="decor decor-blue decor-5" style={{ bottom: '30%', right: '5%' }}></div>
+      <div className="decor decor-darkblue decor-6" style={{ bottom: '-10%', right: '2%' }}></div>
 
-      <div className="hero-wrapper">
+      <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">
             Bảo hành <span className="hight-light1">"một chạm"</span>
             <br />
             với QRanty.
-            
           </h1>
+
           <div className="hero-subtitle">
             <ul style={{ listStyle: "none", paddingLeft: 0 }}>
-              <li className="subtitle">✅ Giải pháp bảo hành thông minh</li>
-              <li className="subtitle">📦 Quản lý bảo hành sản phẩm</li>
-              <li className="subtitle">⚡ Kích hoạt bảo hành tức thì</li>
+              <li className="hero-list-item">✅ Giải pháp bảo hành thông minh</li>
+              <li className="hero-list-item">📦 Quản lý bảo hành sản phẩm</li>
+              <li className="hero-list-item">⚡ Kích hoạt bảo hành tức thì</li>
             </ul>
-            <button
-              className="hero-contact-cta"
-              onClick={() => setIsModalOpen(true)}
-            >
-              Liên hệ ngay
-            </button>
           </div>
+
+          <a className="hero-button" href="#form">
+            Liên hệ ngay
+          </a>
         </div>
-        <div className="img-container">
+
+        <div className="hero-image">
           <img src="/assets/qranty_phone.png" alt="qranty phone" />
         </div>
       </div>
 
-      <button className="form-cta" onClick={() => setIsModalOpen(true)}>
+      <a className="floating-cta" href="#form">
         Nhận thông tin
-      </button>
-
-      {isModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <button
-              className="modal-close"
-              onClick={() => setIsModalOpen(false)}
-            >
-              ✕
-            </button>
-            
-            <div id="hubspotForm"></div>
-          </div>
-        </div>
-      )}
+      </a>
     </section>
   );
 }
