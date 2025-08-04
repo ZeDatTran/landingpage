@@ -58,72 +58,7 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
-/* 
-.hero {
-  
-  background-size: cover;
-  background-position: center;
-  color: #052364;
-  padding: 100px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 70vh;
-  animation: fadeIn 1s ease-in;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid black;
-}
 
-.hero-video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.hero-content {
-  max-width: 50%;
-  animation: slideIn 1.2s ease-in-out;
-  position: relative;
-  z-index: 1;
-    border: 1px solid black;
-
-}
-
-.hero-title {
-  font-size: 3.5em;
-  font-weight: 800;
-  line-height: 1.2;
-  color: #052258;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-  margin-bottom: 20px;
-}
-
-.hero-subtitle {
-  font-size: 1.3em;
-  font-weight: 500;
-  color: #030e22;
-  margin-bottom: 25px;
-  animation: fadeIn 1.5s ease-in;
-}
-.img-container {
-  max-width: 50%;
-  height:fit-content;
-  overflow: hidden;
-  border: 1px solid black;
-
-}
-
-.img-container img {
-  width: 100%;
-  height: 600px;
-  object-fit: none;
-  object-position: left;
-} */
 
 .hero-contact-cta {
   background: #007bff;
@@ -214,28 +149,6 @@ nav a {
   color: #333;
 }
 
-.demo-form {
-  color: #333;
-}
-
-.demo-form input, .demo-form textarea {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-.demo-form button {
-  background: #333;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  width: 100%;
-  font-weight: bold;
-}
 
 /* Animations */
 @keyframes fadeIn {
@@ -346,560 +259,115 @@ nav a {
   }
   .contact-info {
     gap: 10px;
-    font-size: 0.9em;
+    font-size: 1.3em;
   }
   nav a {
     font-size: 0.9em;
   }
 }
 
-
-.team-image-placeholder {
-  width: 350px;
-  height: 350px;
-  border-radius: 20px;
-  background-image: url('./pic/pic1.png'); /* Cập nhật đường dẫn ảnh phù hợp với dự án bạn */
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  animation: scaleIn 1.2s ease-out;
+.footer {
+  padding: 30px;
+  background: linear-gradient(135deg, #3b06cc, #6d26ca);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  animation: slideIn 1s ease-in-out;
 }
 
-.team-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.footer h2,
+.footer p {
+  margin: 5px 0;
 }
 
-.about-text {
-  flex: 1;
-  text-align: left;
-}
-
-.about-highlight {
-  font-size: 1.8em;
-  color: #ff5722;
-  margin-bottom: 20px;
-  animation: fadeIn 1.5s ease-in;
-}
-
-.about-text p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: #333;
-}
-
-
-
-.issues {
-  padding: 60px 40px;
-  background-size: cover;
-  text-align: center;
-  animation: fadeIn 1s ease-in;
-}
-
-.issues-container {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: flex-start;
-  gap: 40px;
-}
-
-.issues-image {
-  flex: 1;
-  max-width: cover;
-}
-
-.issues-illustration {
-  width: 100%;
-  height: 550px;
-  background-image: url('./pic/pic3.png');
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-}
-
-.issues-content {
-  flex: 1;
-  text-align: left;
-}
-
-.issues-title {
-  font-size: 2.5em;
-  color: #330aa3;
-  margin-bottom: 30px;
-}
-
-.issues-list {
+.footer-container {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+  font-size: 1em;
+
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 }
 
-.issue-item {
+.footer-left {
   flex: 1;
-}
-
-.issue-item h3 {
-  font-size: 1.8em;
-  color: #ff5722;
-  margin-bottom: 15px;
-}
-
-.issue-item ul {
-  list-style: none;
-  padding: 0;
-}
-
-.issue-item li {
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-
-.solutions {
-  padding: 60px 40px;
-  background: #f8f9fa;
-  text-align: center;
-  animation: fadeIn 1s ease-in;
-  background-color: white;
-}
-
-.solutions-container {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: flex-start;
-  gap: 40px;
-}
-
-.solutions-content {
-  flex: 1;
+  min-width: 250px;
+  max-width: 50%;
   text-align: left;
-  width: 100%;
-}
-.solutions-title {
-  font-size: 2.5em;
-  color: #330aa3;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-
-.solutions-list {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-}
-
-.solution-item {
-  display: flex;
   align-items: flex-start;
-  gap: 20px;
 }
 
-/* New: control image position */
-.solution-item.normal {
-  flex-direction: row;
+.footer-logo {
+  display: block;
+  width: 160px;
+  margin-bottom: 0; /* bỏ khoảng dưới logo */
 }
 
-.solution-item.reverse {
-  flex-direction: row-reverse;
+.footer-slogan {
+  font-style: italic;
+  font-size: 14px;
+  color: #eee;
+  margin-top: 4px;        /* sát logo hơn */
+  margin-bottom: 24px;    /* tách biệt khỏi thông tin bên dưới */
 }
 
-.solution-image-wrapper {
-  flex: 0 0 40%;
-  height: 200px;
-  border-radius: 10px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  align-self: center; 
+
+.footer-left a {
+  color: #fff;
+  text-decoration: underline;
 }
 
-.solution-image-1 {
-  background-image: url('./pic/scan.png');
-}
-
-.solution-image-2 {
-  background-image: url('./pic/qrpl.png');
-}
-
-.solution-image-3 {
-  background-image: url('./pic/business.png');
-}
-
-.solution-text {
+.footer-right {
   flex: 1;
- 
-  
-}
-
-.solution-item h3 {
-  font-size: 1.8em;
-  color: #007bff;
-  margin-bottom: 15px;
-}
-
-.tick-list {
-  list-style: none;
-  padding: 0;
-}
-
-.tick-list li {
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  color: #333;
-  position: relative;
-  padding-left: 25px;
-}
-
-.tick-list li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: green;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .solutions-container {
-    flex-direction: column;
-  }
-  .solutions-content {
-    width: 100%;
-  }
-  .solutions-title {
-    font-size: 2em;
-  }
-  .solution-item {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .solution-image-wrapper {
-    flex: 0 0 100%;
-    height: 150px;
-  }
-  .solution-item h3 {
-    font-size: 1.5em;
-  }
-  .tick-list li {
-    font-size: 1em;
-  }
-}
-
-.features {
-  padding: 80px 40px;
-  background: linear-gradient(135deg, #f3f8ff, #ffffff);
-  animation: fadeIn 1s ease-in;
-}
-
-.about-title {
-  font-size: 2.5em;
-  margin-bottom: 40px;
-  color: #0d3b66;
-  font-weight: bold;
-  text-align: center;
-}
-
-.features-layout {
-  display: flex;
-  align-items: stretch;
-  gap: 40px;
-  max-width: 1400px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-
-.feature-image-left {
-  flex: 0 0 45%;
-  height: auto;
-  min-height: 420px;
-  background-image: url('./pic/fetur.jpg');
-  background-size: contain; /* hoặc cover nếu bạn muốn ảnh full */
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 12px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-}
-
-.card-grid {
-  flex: 0 0 55%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
-
-.card-grid {
-  flex: 2;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  min-width: 400px;
-}
-
-.card {
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
-  padding: 30px 20px;
-  border-radius: 16px;
-  box-shadow: 0 6px 24px rgba(0, 123, 255, 0.08);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, #007bff33 0%, transparent 60%);
-  transform: scale(0);
-  transition: transform 0.4s ease;
-  z-index: 0;
-}
-
-.card:hover::before {
-  transform: scale(1);
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 123, 255, 0.15);
-}
-
-.card h3 {
-  font-size: 1.5em;
-  color: #007bff;
-  margin-bottom: 15px;
-  position: relative;
-  z-index: 1;
-}
-
-.card p {
-  font-size: 1.05em;
-  color: #333;
-  line-height: 1.6;
-  position: relative;
-  z-index: 1;
-}
-
-.card::after {
-  content: "✨";
-  font-size: 2em;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  opacity: 0.2;
-  z-index: 0;
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-  .features-layout {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .feature-image-left {
-    width: 100%;
-    height: 300px;
-    margin-bottom: 30px;
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-title {
-    font-size: 2em;
-  }
-}
-
-.benefits {
-  padding: 60px 40px;
-  background: #fff;
-  text-align: center;
-  animation: fadeIn 1s ease-in;
-}
-
-.benefits-title {
-  font-size: 2.5em;
-  color: #330aa3;
-  margin-bottom: 40px;
-}
-
-.benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.benefit-card {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  overflow: hidden;
-  animation: scaleIn 1.2s ease-out;
-  transition: transform 0.3s;
-}
-
-.benefit-card:hover {
-  transform: translateY(-5px);
-}
-
-.benefit-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.benefit-text {
-  padding: 20px;
-  text-align: center;
-}
-
-.benefit-text p {
-  font-size: 1.1em;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-/* ==== Section Results ==== */
-
-.results-section {
+  min-width: 250px;
+  max-width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
-  background-color: white;
-  flex-wrap: wrap;
 }
 
-.results-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  max-width: 1200px;
-  gap: 3rem;
-  flex-wrap: wrap;
+/* Hiệu ứng xuất hiện */
+@keyframes slideIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-.left-content .phone-img {
-  background-image: url("../public/assets/qranty_phone.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 350px;
-  height: 600px;
-}
+/* Responsive cho mobile và tablet */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-.right-content {
-  flex: 1;
-  min-width: 320px;
-}
+  .footer-left,
+  .footer-right {
+    max-width: 100%;
+    text-align: center;
+  }
 
-.headline {
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 1.4;
-}
+  .footer-logo {
+    margin: 0 auto 10px auto;
+  }
 
-.highlight {
-  background-color: #facc15;
-  padding: 0 0.5rem;
-  border-radius: 0.25rem;
-}
-
-.description {
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  color: #4a4a4a;
-}
-
-.sample-img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: contain;
-  border-radius: 1rem;
-  border: 1px solid #ddd;
+  .footer-left {
+    text-align: center;
+  }
 }
 
 
-
-.testimonials {
-  padding: 60px 40px;
-  background: #f8f9fa;
-  animation: fadeIn 1s ease-in;
-}
-
-.testimonials-title {
-  font-size: 2.5em;
-  color: #330aa3;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.testimonial-card {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  overflow: hidden;
-  animation: scaleIn 1.2s ease-out;
-  transition: transform 0.3s;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-5px);
-}
-
-.testimonial-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.testimonial-text {
-  padding: 20px;
-  text-align: center;
-}
-
-.testimonial-text p {
-  font-size: 1.1em;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.testimonial-text cite {
-  font-style: italic;
-  color: #666;
-  font-size: 1em;
-}
-
-.footer {
-  padding: 30px;
-  background: linear-gradient(135deg, #330aa3, #5a2dc7);
-  color: white;
-  text-align: center;
-  animation: slideIn 1s ease-in-out;
-}
 
 /* Animations */
 @keyframes fadeIn {

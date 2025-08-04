@@ -1,0 +1,62 @@
+.testimonials-chat {
+  padding: 60px 20px;
+  background: #f9f9ff;
+  animation: fadeIn 1s ease-in;
+}
+
+.testimonial-chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.chat-bubble {
+  max-width: 70%;
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-size: 1.1em;
+  line-height: 1.5;
+  position: relative;
+  animation: fadeInUp 0.8s ease both;
+}
+
+.chat-bubble p {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.chat-bubble cite {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Vị trí bên trái */
+.chat-bubble.left {
+  align-self: flex-start;
+  background: #e0eaff;
+  border-bottom-left-radius: 0;
+}
+
+/* Vị trí bên phải */
+.chat-bubble.right {
+  align-self: flex-end;
+  background: #d1ffe0;
+  border-bottom-right-radius: 0;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

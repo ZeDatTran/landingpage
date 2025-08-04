@@ -1,0 +1,167 @@
+/* Các style khác giữ nguyên từ phiên bản trước */
+
+.results {
+  padding: 60px 40px;
+   background: linear-gradient(135deg, #f3f8ff, #ffffff);
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.results-title {
+  font-size: 2.5em;
+  color: #2a2a72;
+  margin-bottom: 40px;
+}
+
+.results-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.results-overview {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.results-overview h3 {
+  font-size: 2.8em;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.results-image-overview {
+  width: 100%;
+  height: 200px;
+  background-image: url('../pic/logo-blue.png'); /* Hình ảnh minh họa tổng quát */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.results-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.result-item {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.result-item:hover {
+  transform: translateY(-5px);
+}
+
+.result-number {
+  font-size: 2.5em;
+  color: #2a2a72;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.case-study-detail {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  text-align: left;
+  position: relative;
+}
+
+.case-study-detail h3 {
+  font-size: 1.8em;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.case-study-image {
+  width: 100%;
+  height: 200px;
+  background-image: url('../pic/brother1.png'); /* Hình ảnh minh họa case study */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.case-study-logo {
+  width: 150px;
+  height: 150px;
+  background-image: url('../pic//brother2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 20px;
+}
+
+.case-study-detail p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.case-study-benefits {
+  list-style: none;
+  padding: 0;
+}
+
+.case-study-benefits li {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.case-study-benefits li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #28a745;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .results-content {
+    flex-direction: column;
+  }
+  .results-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .result-item {
+    width: 100%;
+  }
+  .results-image-overview {
+    height: 150px;
+  }
+  .case-study-detail {
+    padding: 15px;
+  }
+  .case-study-image {
+    height: 150px;
+  }
+  .case-study-logo {
+    width: 100px;
+    height: 100px;
+  }
+  .case-study-detail p {
+    font-size: 1em;
+  }
+  .case-study-benefits li {
+    font-size: 1em;
+  }
+}
+
+/* Các style khác giữ nguyên từ phiên bản trước */

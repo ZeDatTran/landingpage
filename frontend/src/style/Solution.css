@@ -1,0 +1,142 @@
+/* Solutions.css */
+
+.solutions-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #d6e8ff, #ffffff, #ffffff);
+}
+
+.solution-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.solution-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.solution-img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 250px;
+  height: 450px;
+  flex-shrink: 0;
+}
+
+.solution-image-1 {
+  background-image: url('../pic/qranty_phone.png');
+}
+.solution-image-2 {
+  background-image: url('../pic/qranty_phone.png');
+}
+
+.solutions-title {
+  font-size: 2.5em;
+  color: #330aa3;
+  text-align: center;
+}
+
+.solution-text-content {
+  flex: 1;
+  min-width: 320px;
+}
+
+.solution-text-content h3 {
+  font-size: 1.8em;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.solution-description {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.solution-tick-list {
+  list-style: none;
+  padding: 0;
+}
+
+.solution-tick-list li {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+  color: #333;
+}
+
+.solution-tick-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: green;
+}
+
+.solution-slider-img {
+  width: 100%;
+  height: 400px; /* Đặt chiều cao cố định để đồng nhất */
+  object-fit: contain; /* Đảm bảo ảnh giữ tỉ lệ và nằm trong khung */
+  border-radius: 1rem;
+  margin-top: 20px;
+  display: block; /* Loại bỏ khoảng trống dưới ảnh */
+}
+
+.slick-slider {
+  width: 100%;
+  max-width: 600px; /* Đặt chiều rộng tối đa cho slider */
+  margin: 0 auto; /* Căn giữa slider */
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 400px; /* Đồng bộ chiều cao với solution-slider-img */
+  object-fit: contain; /* Đảm bảo ảnh không bị cắt */
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.fade-in.delay-1 { animation-delay: 0.2s; }
+.fade-in.delay-2 { animation-delay: 0.4s; }
+.fade-in.delay-3 { animation-delay: 0.6s; }
+.fade-in.delay-4 { animation-delay: 0.8s; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .solution-block {
+    flex-direction: column !important;
+  }
+
+  .solution-img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .solution-slider-img {
+    height: 200px; /* Giảm chiều cao cho mobile */
+  }
+
+  .slick-slide img {
+    height: 200px; /* Đồng bộ chiều cao với mobile */
+  }
+}

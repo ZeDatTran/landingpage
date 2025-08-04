@@ -6,10 +6,12 @@ import About from './components/About';
 import Features from './components/Features';
 import Issues from './components/Issues';
 import Solutions from './components/Solutions.js';
-import Benefits from './components/Benefits';
 import Results from './components/Results';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
+import Form from './components/Form';
+import useScrollTracking from './components/tracking.js'
+import { useRef } from 'react';
 
 function App() {
   return (
@@ -20,9 +22,9 @@ function App() {
       <Issues />
       <Solutions/>
       <Features />
-      {/* <Benefits /> */}
       <Results />
       <Testimonials />
+      <Form/>
       <Footer />
     </div>
   );

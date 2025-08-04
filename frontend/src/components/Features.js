@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import '../style/Feature.css';
 
 function Features() {
   return (
@@ -11,35 +12,31 @@ function Features() {
 
         <div className="card-grid">
           <div className="card">
-            <h3>Kích Hoạt & Thông Tin</h3>
+            <h3>Bảng điều khiển & Theo dõi hành vi người dùng:</h3>
             <p>
-              Quét mã QR để kích hoạt bảo hành chỉ với 1 chạm.<br/>
-              Quản lý bảo hành dễ dàng với thông tin rõ ràng.<br/>
-              Bạn có thể tận dụng mã QR để thiết lập Hướng dẫn sử dụng cho khách hàng.
+              Hiển thị dữ liệu theo thời gian thực, phân tích xu hướng và nhu cầu người dùng → 
+              giúp doanh nghiệp ra quyết định nhanh, tối ưu hóa quy trình và chiến lược. </p>
+          </div>
+
+          <div className="card">
+            <h3>Công cụ thúc đẩy doanh thu cho thương hiệu:</h3>
+            <p>
+              Khai thác dữ liệu bảo hành để tạo insight, triển khai marketing mục tiêu, bán bảo hành mở rộng → 
+              biến dịch vụ hậu mãi thành cơ hội tăng doanh thu.
             </p>
           </div>
 
           <div className="card">
-            <h3>Cá nhân hóa giải pháp</h3>
+            <h3>Thu thập dữ liệu không gián đoạn:</h3>
             <p>
-              Tính năng, giao diện, cơ sở dữ liệu,... tùy chỉnh theo yêu cầu, tăng độ nhận diện thương hiệu và uy tín doanh nghiệp.
+              Tự động thu thập thông tin qua mã QR → không cần nhập tay, giảm lỗi, tăng hiệu suất và trải nghiệm người dùng.
             </p>
           </div>
 
           <div className="card">
-            <h3>Insights & Analytics</h3>
+            <h3>Knowledge Base & Chatbot AI:</h3>
             <p>
-              Hiểu Biết Hành Vi: Xác định xu hướng và nhu cầu khách hàng.<br/>
-              Tối Ưu Hóa Quy Trình: Cải thiện quản lý bảo hành và chiến lược marketing.<br/>
-              Thúc Đẩy Tăng Trưởng: Biến dữ liệu thành cơ hội kinh doanh, tăng lòng trung thành.
-            </p>
-          </div>
-
-          <div className="card">
-            <h3>Hỗ Trợ Trực Tuyến</h3>
-            <p>
-              Có thể tích hợp dịch vụ call center dựa trên hệ thống của Gcalls để người tiêu dùng có thể liên hệ trực tiếp tới đội ngũ bảo hành khi gặp vấn đề.
-            </p>
+              Cung cấp thông tin sản phẩm, hướng dẫn sử dụng. Chatbot AI hỗ trợ 24/7 → nâng cao chăm sóc khách hàng, giảm tải cho đội ngũ hỗ trợ.</p>
           </div>
         </div>
       </div>
