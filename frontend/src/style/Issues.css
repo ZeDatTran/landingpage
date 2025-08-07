@@ -14,11 +14,11 @@
 }
 
 .issue-item h3 {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 .issue-item li {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 .issues {
   padding: 80px 40px;
@@ -115,7 +115,7 @@
 .issue-item-company p {
   margin: 0;
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #333;
   line-height: 1.5;
 }

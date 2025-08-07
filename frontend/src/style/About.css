@@ -36,22 +36,21 @@
 
 .about-text {
   flex: 3;
-  text-align: left;
+  text-align: justify;
   animation: slideIn 0.8s ease-in-out;
 }
 
 .about-text p {
-  font-size: 1.3rem;
+  font-size: 1.5em;
   line-height: 1.8;
   color: #444;
   margin-bottom: 0;
 }
 
-.team-image-placeholder {
+.team-video-placeholder {
   flex: 2;
   min-height: 280px;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(51, 10, 163, 0.15);
   animation: fadeIn 0.8s ease-in-out;
-  background-image: url("../pic/pic1.png");
 }

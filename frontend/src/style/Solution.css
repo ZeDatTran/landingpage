@@ -1,7 +1,7 @@
 /* Solutions.css */
 
 .solutions-section {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem; /* Tăng padding để không gian rộng hơn */
   background: linear-gradient(135deg, #d6e8ff, #ffffff, #ffffff);
 }
 
@@ -9,9 +9,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto 80px auto;
-  gap: 3rem;
+  max-width: 1600px; /* Tăng max-width để mở rộng bố cục */
+  margin: 0 auto 100px auto; /* Tăng margin-bottom */
+  gap: 2.5rem; /* Giảm gap nhẹ để cân đối */
   flex-wrap: wrap;
 }
 
@@ -23,8 +23,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 250px;
-  height: 450px;
+  width: 310px; /* Tăng chiều rộng */
+  height: 510px; /* Tăng chiều cao */
   flex-shrink: 0;
 }
 
@@ -36,25 +36,27 @@
 }
 
 .solutions-title {
-  font-size: 2.5em;
+  font-size: 3em; /* Tăng font-size cho tiêu đề chính */
   color: #330aa3;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .solution-text-content {
   flex: 1;
-  min-width: 320px;
+  min-width: 400px; /* Tăng min-width để nội dung rộng hơn */
+  text-align: justify;
 }
 
 .solution-text-content h3 {
-  font-size: 1.8em;
+  font-size: 2.2em; /* Tăng font-size tiêu đề */
   color: #007bff;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .solution-description {
-  font-size: 1.3em;
-  margin-bottom: 15px;
+  font-size: 1.5em; /* Tăng font-size mô tả */
+  margin-bottom: 20px;
   color: #444;
 }
 
@@ -64,10 +66,10 @@
 }
 
 .solution-tick-list li {
-  font-size: 1.3em;
-  margin-bottom: 10px;
+  font-size: 1.5em; /* Tăng font-size danh sách */
+  margin-bottom: 12px;
   position: relative;
-  padding-left: 25px;
+  padding-left: 30px;
   color: #333;
 }
 
@@ -76,28 +78,31 @@
   position: absolute;
   left: 0;
   color: green;
+  font-size: 1.5em; /* Tăng kích thước checkmark */
 }
 
 .solution-slider-img {
   width: 100%;
-  height: 400px; 
-  object-fit: contain; 
+  height: 450px; /* Tăng chiều cao slider */
+  object-fit: contain; /* Giữ tỉ lệ ảnh */
   border-radius: 1rem;
   margin-top: 20px;
-  display: block; 
+  display: block;
 }
 
 .slick-slider {
   width: 100%;
-  max-width: 600px; 
-  margin: 0 auto; 
+  max-width: 700px; /* Tăng max-width cho slider */
+  margin: 0 auto;
 }
 
 .slick-slide img {
   width: 100%;
-  height: 400px; 
-  object-fit: contain; 
+  height: 450px; /* Đồng bộ chiều cao với solution-slider-img */
+  object-fit: contain;
 }
+
+/* Fade-in Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -127,14 +132,34 @@
 
   .solution-img {
     width: 100%;
-    height: 300px;
+    height: 350px; /* Giảm chiều cao cho mobile */
+  }
+
+  .solution-text-content {
+    min-width: 300px; /* Giảm min-width cho mobile */
+  }
+
+  .solutions-title {
+    font-size: 2.2em; /* Giảm font-size cho mobile */
+  }
+
+  .solution-text-content h3 {
+    font-size: 1.8em;
+  }
+
+  .solution-description {
+    font-size: 1.2em;
+  }
+
+  .solution-tick-list li {
+    font-size: 1.2em;
   }
 
   .solution-slider-img {
-    height: 200px; /* Giảm chiều cao cho mobile */
+    height: 250px; /* Giảm chiều cao cho mobile */
   }
 
   .slick-slide img {
-    height: 200px; /* Đồng bộ chiều cao với mobile */
+    height: 250px; /* Đồng bộ chiều cao với mobile */
   }
 }

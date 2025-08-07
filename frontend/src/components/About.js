@@ -1,19 +1,26 @@
 import React from 'react';
 import '../style/About.css';
+
 function About() {
   return (
     <section className="about" id="about">
-
       <div className="about-content">
-        <div className="team-image-placeholder">
+        <div className="team-video-placeholder">
+          <iframe
+            width="100%"
+            height="280"
+            src="https://www.youtube.com/embed/FF4dzjhUm5E?start=100"
+            title="YouTube video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
         <div className="about-text">
-                <h2 className="about-title">Qranty giải pháp bảo hành <span className="about-highlight ">"một chạm"</span></h2>
+          <h2 className="about-title">Qranty - Giải pháp bảo hành thông minh <span className="about-highlight">"một chạm"</span></h2>
           <p>
-            QRanty - Giải pháp bảo hành thông minh, cho phép <strong>kích hoạt bảo hành tức thì</strong> chỉ với một lần quét mã QR. 
-            Tích hợp hệ thống CRM, tự động cập nhật thông tin sản phẩm và khách hàng. 
-            Khác biệt hoàn toàn với bảo hành truyền thống, QRanty <strong>giảm thiểu nhập liệu thủ công</strong>, 
-            mang đến trải nghiệm <strong>đơn giản, nhanh chóng</strong> và hiện đại cho khách hàng.
+            Qranty cung cấp giải pháp bảo hành thông minh, kích hoạt tức thì qua quét mã QR, tích hợp CRM tự động cập nhật dữ liệu,
+            tiết kiệm chi phí, giảm nhập liệu thủ công, mang lại trải nghiệm đơn giản, nhanh chóng cho doanh nghiệp và khách hàng.
           </p>
         </div>
       </div>

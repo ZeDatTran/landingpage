@@ -11,16 +11,16 @@ function Results() {
           <div className="results-image results-image-overview"></div> {/* Hình ảnh minh họa */}
           <div className="results-grid">
             <div className="result-item">
-              <span className="result-number">50+</span>
-              <span>Doanh nghiệp & Đối tác</span>
+              <span className="result-number">50%</span>
+              <span>Hiệu quả chăm sóc khách hàng</span>
             </div>
             <div className="result-item">
-              <span className="result-number">150k+</span>
-              <span>QR Code được quản lý</span>
+              <span className="result-number">40%</span>
+              <span>Hiệu quả Marketing</span>
             </div>
             <div className="result-item">
-              <span className="result-number">95%</span>
-              <span>Tỷ lệ quét thành công cao </span>
+              <span className="result-number">20%</span>
+              <span>Doanh thu </span>
             </div>
           </div>
         </div>
