@@ -48,11 +48,7 @@ function Form() {
   return (
     <div className="form-container" id="form">
       <div className="img-communication-container">
-        <img
-          id="img-contact"
-          src="/assets/communications.png"
-          alt="contact us"
-        />
+        <img id="img-contact" src="/assets/contactUs.jpg" alt="contact us" />
       </div>
       <div className="script-container">
         <div id="hubspotFormStatic"></div>

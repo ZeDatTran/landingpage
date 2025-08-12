@@ -1,29 +1,20 @@
-.issues-company-list {
-  display: flex;
-  flex-direction: row;
-}
+
 .issues-content {
   width: 100%;
 }
 
 .issues-title {
   font-size: 2.5em;
-  color: #330aa3;
+  color: #223a7a;
   margin-bottom: 80px;
   width: 100%;
 }
 
-.issue-item h3 {
-  font-size: 1.8em;
-}
 
-.issue-item li {
-  font-size: 1.5em;
-}
 .issues {
   padding: 80px 40px;
   background-size: cover;
-  background: linear-gradient(135deg, #d6e8ff, #ffffff, #ffffff);
+  /* background: linear-gradient(135deg, #d6e8ff, #ffffff, #ffffff); */
   text-align: center;
   animation: fadeIn 1s ease-in;
 }
@@ -31,8 +22,11 @@
 .issues-container {
   display: flex;
   width: 100%;
+  flex-direction: row;
   margin: 0 auto;
-  align-items: flex-start;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   gap: 100px;
 }
 
@@ -41,81 +35,4 @@
   max-width: cover;
 }
 
-.issues-illustration {
-  width: 100%;
-  height: 550px;
-  /* background-image: url('./pic/pic3.png'); */
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-}
 
-.issues-content {
-  flex: 1;
-  text-align: left;
-}
-/* 
-.issues-title {
-  font-size: 2.5em;
-  color: #330aa3;
-  margin-bottom: 50px;
-} */
-
-.issues-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-.issue-item {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  background: linear-gradient(135deg, #e0f7fab7, #e4defcb6, #bfe5f7);
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.issue-item h3 {
-  font-size: 1.8em;
-  color: #ff5722;
-  margin-bottom: 15px;
-  font-weight: 600;
-  /* border-left: 4px solid #2c2cac; */
-  padding-left: 12px;
-}
-
-.issue-item-company {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 16px;
-  border: 1px solid #e0e0e0;
-  border-left: 4px solid #2c2cac;
-  border-radius: 10px;
-
-  transition: box-shadow 0.2s ease;
-}
-
-.issue-item-company:hover {
-  box-shadow: 0 4px 10px rgba(44, 44, 172, 0.2);
-}
-
-.issue-item-company img {
-  height: 48px;
-  width: 48px;
-  margin-right: 16px;
-  padding: 6px;
-  background-color: #f0f4ff;
-  border-radius: 8px;
-  border: 1px solid #d0d4f0;
-}
-
-.issue-item-company p {
-  margin: 0;
-  text-align: left;
-  font-size: 1.5em;
-  color: #333;
-  line-height: 1.5;
-}

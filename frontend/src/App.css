@@ -1,43 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   -webkit-text-size-adjust: 100%;
 }
-
 .header {
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; 
-  background: linear-gradient(135deg, #330aa3, #5a2dc7);
+  z-index: 1000;
+  background: #223a7a;
   color: white;
-  padding: 15px 100px;
+  padding: 0 100px; /* bỏ padding vertical để không phá căn giữa */
   display: flex;
+  font-size: 20px;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  align-items: center; /* Căn giữa dọc */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   animation: slideIn 1s ease-in-out;
-  height: 50px;
-  margin: 0;       
-  
+  height: 70px; /* đặt chiều cao cố định hợp lý */
 }
 
-
 .logo {
-  width: 180px;
-  height: 180px; 
-  background-image: url('./pic/logo-white.png');
+  width: 120px;
+  height: 100%; /* để tự căn giữa theo header */
+  background-image: url("./pic/logo-white.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.header-logo {
-  height: 40px;
-  width: auto;
+nav ul {
+  display: flex;
+  align-items: center; /* Căn giữa dọc menu items */
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
 }
 
 .contact-info {
@@ -47,18 +54,17 @@ body {
   animation: fadeIn 1.2s ease-in;
 }
 
-nav ul {
+/* nav ul {
   display: flex;
   list-style: none;
   gap: 25px;
-}
+} */
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
-
 
 .hero-contact-cta {
   background: #007bff;
@@ -75,19 +81,19 @@ nav a {
 
 .hero-contact-cta:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .video-container {
-  width: 800px; 
-  height: 500px; 
+  width: 800px;
+  height: 500px;
 }
 
 .hero-video {
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   animation: scaleIn 1.2s ease-out;
 }
 
@@ -108,10 +114,9 @@ nav a {
   animation: blink 1.5s infinite;
 }
 
-
 .form-cta:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .modal {
@@ -120,7 +125,7 @@ nav a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,21 +154,36 @@ nav a {
   color: #333;
 }
 
-
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideIn {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes scaleIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Responsive */
@@ -172,14 +192,15 @@ nav a {
     flex-direction: column;
     padding: 40px 20px;
   }
-  .hero-content, .video-container {
+  .hero-content,
+  .video-container {
     max-width: 100%;
   }
   .hero-title {
     font-size: 2.5em;
   }
   .hero-subtitle {
-    font-size: 1.1em;
+    font-size: 25px;
   }
   .video-container {
     height: 300px;
@@ -204,7 +225,7 @@ nav a {
     height: 250px;
   }
   .about-text {
-    text-align: center;
+    text-align: left;
   }
   .card-grid {
     grid-template-columns: 1fr;
@@ -268,9 +289,10 @@ nav a {
 
 .footer {
   padding: 30px;
-  background: linear-gradient(135deg, #3b06cc, #6d26ca);
+  background: #223a7a;
+  /* background: linear-gradient(135deg, #3b06cc, #6d26ca); */
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   animation: slideIn 1s ease-in-out;
 }
 
@@ -313,10 +335,9 @@ nav a {
   font-style: italic;
   font-size: 14px;
   color: #eee;
-  margin-top: 4px;        /* sát logo hơn */
-  margin-bottom: 24px;    /* tách biệt khỏi thông tin bên dưới */
+  margin-top: 4px; /* sát logo hơn */
+  margin-bottom: 24px; /* tách biệt khỏi thông tin bên dưới */
 }
-
 
 .footer-left a {
   color: #fff;
@@ -367,22 +388,36 @@ nav a {
   }
 }
 
-
-
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideIn {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes scaleIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Responsive */
@@ -391,14 +426,15 @@ nav a {
     flex-direction: column;
     padding: 40px 20px;
   }
-  .hero-content, .video-container {
+  .hero-content,
+  .video-container {
     max-width: 100%;
   }
   .hero-title {
     font-size: 2.5em;
   }
   .hero-subtitle {
-    font-size: 1.1em;
+    font-size: 25px;
   }
   .video-container {
     height: 300px;
@@ -423,7 +459,7 @@ nav a {
     height: 250px;
   }
   .about-text {
-    text-align: center;
+    text-align: left;
   }
   .card-grid {
     grid-template-columns: 1fr;

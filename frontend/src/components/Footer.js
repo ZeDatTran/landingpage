@@ -1,23 +1,34 @@
 import React from 'react';
-import '../App.css'; // hoặc đổi thành './Footer.css' nếu bạn tách riêng CSS
+import '../style/Footer.css';
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
+        {/* Left section */}
         <div className="footer-left">
-          <img
+           <img
             src="/assets/logo-white.png"
             alt="Qranty Logo"
             className="footer-logo"
           />
+          <p className="company-name">Công Ty Cổ Phần Qranty</p>
 
-          <p><strong>Công ty Cổ phần Qranty</strong></p>
-          <p>SĐT: 0976 214 551</p>
-          <p>Email: <a href="mailto:Sales@qranty.com">Sales@qranty.com</a></p>
-          <p>Địa chỉ: 268 Lý Thường Kiệt, Phường Diên Hồng, Thành phố Hồ Chí Minh</p>
+          <p className="footer-item">
+            <i className="fas fa-envelope"></i>
+            <a href="mailto:Qranty@gmail.com">Qranty@gmail.com</a>
+          </p>
+          <p className="footer-item">
+            <i className="fas fa-phone-alt"></i>
+            Liên hệ: 0900 1590
+          </p>
+          <p className="footer-item">
+            <i className="fas fa-map-marker-alt"></i>
+            Địa chỉ: 168 Lý Thường Kiệt, Phường Diên Hồng, TP. Hồ Chí Minh, Việt Nam
+          </p>
         </div>
 
+        {/* Right section */}
         <div className="footer-right">
           <iframe
             title="Google Map"

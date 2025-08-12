@@ -1,26 +1,39 @@
-import React from 'react';
-import '../style/About.css';
+import React from "react";
+import "../style/About.css";
 
 function About() {
+const YOUTUBE_URL = "https://www.youtube.com/embed/ZHG0AeI56Kk?rel=0&modestbranding=1";
+
+
   return (
     <section className="about" id="about">
       <div className="about-content">
-        <div className="team-video-placeholder">
-          <iframe
-            width="100%"
-            height="280"
-            src="https://www.youtube.com/embed/FF4dzjhUm5E?start=100"
-            title="YouTube video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+        <div className="team-image-placeholder">
+          <div className="team-video-wrapper">
+            <iframe
+              className="team-video"
+              src={YOUTUBE_URL}
+              title="Qranty demo video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+          </div>
         </div>
         <div className="about-text">
-          <h2 className="about-title">Qranty - Giải pháp bảo hành thông minh <span className="about-highlight">"một chạm"</span></h2>
+          <h2
+            className="about-title"
+            style={{ textAlign: "left", color: "#223a7a" }}
+          >
+            Qranty giải pháp bảo hành{" "}
+            <span className="about-highlight">"một chạm"</span>
+          </h2>
           <p>
-            Qranty cung cấp giải pháp bảo hành thông minh, kích hoạt tức thì qua quét mã QR, tích hợp CRM tự động cập nhật dữ liệu,
-            tiết kiệm chi phí, giảm nhập liệu thủ công, mang lại trải nghiệm đơn giản, nhanh chóng cho doanh nghiệp và khách hàng.
+            Cho phép kích hoạt bảo hành tức thì{" "}
+            <strong>chỉ với một lần quét mã QR.</strong>
+            {" "}Cập nhật thông tin sản phẩm và khách hàng tự động. Qranty giảm thiểu nhập liệu thủ công,
+            mang đến trải nghiệm đơn giản, nhanh chóng và hiện đại cho khách hàng.
           </p>
         </div>
       </div>
