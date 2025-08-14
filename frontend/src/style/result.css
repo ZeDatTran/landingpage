@@ -1,147 +1,80 @@
-/* Các style khác giữ nguyên từ phiên bản trước */
-
-.results {
-  padding: 60px 40px;
-   background: linear-gradient(135deg, #f3f8ff, #ffffff);
-  text-align: center;
-  animation: fadeIn 1s ease-in;
-}
-
-.results-title {
-  font-size: 2.5em;
-  color: #2a2a72;
-  margin-bottom: 40px;
-}
-
-.results-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.results-overview {
-  background: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  position: relative;
-}
-
-.results-overview h3 {
-  font-size: 2.8em;
-  color: #007bff;
+/* ---- Partners section ---- */
+.partners-title{
+  font-size: 1.6rem;
+  color: #1d2b53;
   margin-bottom: 20px;
 }
 
-.results-image-overview {
-  width: 100%;
-  height: 200px;
-  background-image: url('../pic/logo-blue.png'); /* Hình ảnh minh họa tổng quát */
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin-bottom: 20px;
+/* Lưới “masonry” 2 hàng giống mockup */
+.partners-grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 120px;
+  gap: 22px;
 }
 
-.results-grid {
+/* Khung logo */
+.partner-card{
+  background: #e1e3e9;            
+  border-radius: 18px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 30px;
+  padding: 18px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.06);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.partner-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
 }
 
-.result-item {
-  background: #f8f9fa;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+/* Ảnh logo */
+.partner-card img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* logo trắng nổi bật trên nền xanh; bỏ nếu muốn màu gốc */
+  opacity: .95;
 }
 
-.result-item:hover {
-  transform: translateY(-5px);
-}
+/* Bố cục “so le” theo ô lưới (desktop ≥1024px) */
+.card-a{ grid-column: 1 / span 3;  grid-row: 1; }
+.card-b{ grid-column: 4 / span 4;  grid-row: 1; }
+.card-c{ grid-column: 8 / span 3;  grid-row: 1; }
+.card-d{ grid-column: 11 / span 2; grid-row: 1; }
+.card-e{ grid-column: 1 / span 4;  grid-row: 2; }
+.card-f{ grid-column: 5 / span 3;  grid-row: 2; }
+.card-g{ grid-column: 8 / span 3;  grid-row: 2; }
+.card-h{ grid-column: 11 / span 2; grid-row: 2; }
 
-.result-number {
-  font-size: 2.5em;
-  color: #2a2a72;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.case-study-detail {
-  background: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  text-align: left;
-  position: relative;
-}
-
-.case-study-detail h3 {
-  font-size: 1.8em;
-  color: #007bff;
-  margin-bottom: 15px;
-}
-
-.case-study-detail p {
-  font-size: 1.2em;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.case-study-benefits {
-  list-style: none;
-  padding: 0;
-}
-
-.case-study-benefits li {
-  font-size: 1.1em;
-  color: #555;
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 20px;
-}
-
-.case-study-benefits li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #28a745;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .results-content {
-    flex-direction: column;
+/* Tablet */
+@media (max-width: 1023px){
+  .partners-grid{
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 110px;
+    gap: 18px;
   }
-  .results-grid {
-    flex-direction: column;
-    gap: 20px;
+  .card-a{ grid-column: 1 / span 3; }
+  .card-b{ grid-column: 4 / span 4; }
+  .card-c{ grid-column: 1 / span 3;  grid-row: 2; }
+  .card-d{ grid-column: 4 / span 4;  grid-row: 2; }
+  .card-e{ grid-column: 1 / span 4;  grid-row: 3; }
+  .card-f{ grid-column: 5 / span 4;  grid-row: 3; }
+  .card-g{ grid-column: 1 / span 4;  grid-row: 4; }
+  .card-h{ grid-column: 5 / span 4;  grid-row: 4; }
+}
+
+/* Mobile */
+@media (max-width: 640px){
+  .partners-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+    gap: 14px;
   }
-  .result-item {
-    width: 100%;
-  }
-  .results-image-overview {
-    height: 150px;
-  }
-  .case-study-detail {
-    padding: 15px;
-  }
-  .case-study-image {
-    height: 150px;
-  }
-  .case-study-logo {
-    width: 100px;
-    height: 100px;
-  }
-  .case-study-detail p {
-    font-size: 1em;
-  }
-  .case-study-benefits li {
-    font-size: 1em;
+  .partner-card{ border-radius: 16px; padding: 14px; }
+  .partner-card img{ filter: none; } /* để logo giữ màu gốc trên mobile nếu muốn */
+  .card-a,.card-b,.card-c,.card-d,.card-e,.card-f,.card-g,.card-h{
+    grid-column: auto; grid-row: auto;
   }
 }
-
-/* Các style khác giữ nguyên từ phiên bản trước */
