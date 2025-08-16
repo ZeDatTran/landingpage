@@ -2,7 +2,7 @@ import React from "react";
 import "../style/About.css";
 
 function About() {
-const YOUTUBE_URL = "https://www.youtube.com/embed/ZHG0AeI56Kk?rel=0&modestbranding=1";
+const YOUTUBE_URL = "https://www.youtube.com/embed/ZHG0AeI56Kk?rel=0&modestbranding=1"; // thay đổi ở đây
 
 
   return (

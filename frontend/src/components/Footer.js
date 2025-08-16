@@ -16,15 +16,15 @@ function Footer() {
 
           <p className="footer-item">
             <i className="fas fa-envelope"></i>
-            <a href="mailto:Qranty@gmail.com">Qranty@gmail.com</a>
+            <a href="mailto:Qranty@gmail.com">Sales@qranty.com</a>
           </p>
           <p className="footer-item">
             <i className="fas fa-phone-alt"></i>
-            Liên hệ: 0900 1590
+            Liên hệ: 0976214551
           </p>
           <p className="footer-item">
             <i className="fas fa-map-marker-alt"></i>
-            Địa chỉ: 168 Lý Thường Kiệt, Phường Diên Hồng, TP. Hồ Chí Minh, Việt Nam
+            Địa chỉ: 268 Lý Thường Kiệt, Phường Diên Hồng, TP. Hồ Chí Minh, Việt Nam
           </p>
         </div>
 

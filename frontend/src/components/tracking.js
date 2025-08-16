@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 const SHEET_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbxPnPEM7sHtdpYcYRK5bE9bXOCXJXusHuXO18RSRakRC_Rh4frsvvgHKeDbWVLGq9qATg/exec";
+  "https://docs.google.com/spreadsheets/d/1rCIiTO7URG9duk568Qg92gvITRRXkDzT9hYgauoyQ9w/edit?pli=1&gid=0#gid=0";
 
 const sendToGoogleSheet = (sectionId) => {
   fetch(SHEET_ENDPOINT, {

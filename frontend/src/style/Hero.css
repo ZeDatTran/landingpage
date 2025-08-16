@@ -128,11 +128,37 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* ✨ Nút nổi bật dưới góc */
+/* Zalo icon button */
+.zalo-icon-button {
+  position: fixed;
+  bottom: 180px; /* Position the Zalo button above the "Nhận thông tin" button */
+  right: 30px; /* Align it to the right */
+  z-index: 1000; /* Ensure it's above the floating CTA button */
+  background-color: #00a0e9; /* Zalo Blue */
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zalo-icon-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.zalo-icon {
+  width: 40px; /* Adjust icon size */
+  height: 40px;
+}
+
+/* 🟦 Nút nổi bật dưới góc */
 .floating-cta {
   position: fixed;
-  bottom: 100px;
-  right: 100px;
+  bottom: 100px; /* Keep the CTA button fixed at bottom-right */
+  right: 30px; /* Keep the CTA button at the right */
   z-index: 999;
   padding: 16px 32px;
   font-size: 1.3rem;
@@ -151,6 +177,8 @@
   transform: scale(1.05);
   box-shadow: 0 0 25px rgba(255, 152, 0, 0.6);
 }
+
+
 
 /* Hiệu ứng bập bênh */
 @keyframes teeter {

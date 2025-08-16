@@ -1,5 +1,7 @@
+import React from "react";
 import "../style/Hero.css";
 import { Row, Col } from "antd";
+
 function Hero() {
   return (
     <section className="hero-section">
@@ -39,6 +41,16 @@ function Hero() {
       </div>
       <a className="floating-cta" href="#form">
         Nhận thông tin
+      </a>
+
+      {/* Zalo Icon Button */}
+      <a
+        className="zalo-icon-button"
+        href="https://zalo.me/0976214551" // Replace with your Zalo number
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/assets/iconzalo.webp" alt="Zalo" className="zalo-icon" />
       </a>
     </section>
   );
